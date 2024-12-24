@@ -161,7 +161,7 @@ const FindDoctor: React.FC = () => {
             <select
               value={filters.expertise}
               onChange={(e) => handleSelectChange(e, "expertise")}
-              className="py-2 bg-inherit outline-none"
+              className="py-2 bg-inherit w-32 outline-none"
             >
               <option value="">Expertise</option>
               {expertiseOptions.map((exp) => (
@@ -171,13 +171,12 @@ const FindDoctor: React.FC = () => {
               ))}
             </select>
           </div>
-
           {/* Gender Filter */}
           <div className="px-2 bg-gray-100 w-fit rounded-md overflow-hidden">
             <select
               value={filters.gender}
               onChange={(e) => handleSelectChange(e, "gender")}
-              className="py-2 bg-inherit outline-none"
+              className="py-2 bg-inherit w-32 outline-none"
             >
               <option value="">Gender</option>
               {genderOptions.map((gen) => (
@@ -187,13 +186,12 @@ const FindDoctor: React.FC = () => {
               ))}
             </select>
           </div>
-
           {/* Fees Filter */}
           <div className="px-2 bg-gray-100 w-fit rounded-md overflow-hidden">
             <select
               value={filters.fees}
               onChange={(e) => handleSelectChange(e, "fees")}
-              className="py-2 bg-inherit outline-none"
+              className="py-2 bg-inherit w-32 outline-none"
             >
               <option value="">Fees</option>
               {feesOptions.map((fee) => (
@@ -203,13 +201,12 @@ const FindDoctor: React.FC = () => {
               ))}
             </select>
           </div>
-
           {/* Languages Filter */}
           <div className="px-2 bg-gray-100 w-fit rounded-md overflow-hidden">
             <select
               value={filters.languages}
               onChange={(e) => handleSelectChange(e, "languages")}
-              className="py-2 bg-inherit outline-none"
+              className="py-2 bg-inherit w-32  outline-none"
             >
               <option value="">Languages</option>
               {languagesOptions.map((lang) => (
@@ -217,6 +214,12 @@ const FindDoctor: React.FC = () => {
                   {lang}
                 </option>
               ))}
+            </select>
+          </div>
+          {/* All filter */}
+          <div className="px-2 bg-[#DCEEDC] w-fit  rounded-md overflow-hidden">
+            <select className="py-2 bg-inherit w-32 outline-none">
+              <option value="">All Filter</option>
             </select>
           </div>
         </div>
